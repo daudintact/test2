@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+	html { 
+		background: url(http://localhost:8000/mainBgImg2/E1kDKL_bg.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	body{
+		padding:0;
+		margin:0;
+	}
+    ul.nav{
+		padding:0;
+		margin:0;
+		width:100%;
+		float:left;
+		list-style:none;
+	}
+	ul.nav li{
+		float:left;
+		margin-right:20px;
+		position:relative;
+	}
+	ul.nav li:last-child{
+		margin-right:0px;
+	}
+	ul.nav li span{
+		width:100%;
+		height:2px;
+		font-size:2px;
+		background:#3D91C9;
+		position:absolute;
+		bottom:0;
+		left:0;
+		display:none;		
+	}
+	ul.nav li dd{
+		padding:0;
+		margin:0;
+		width:auto;	
+	}
+	ul.nav li a{
+		text-decoration:none;
+		font-family:Arial, Helvetica, sans-serif;
+		color:#fff;
+		font-size:12px;
+		line-height:70px;
+		float:left;
+		text-transform:uppercase;
+		transition:all 0.40s;
+	}
+	ul.nav li a:hover{
+		color:#3D91C9;
+	}
+	ul.nav li dd:hover span{
+		display:block;
+	}
+	
+	/*subNavL1*/
+	ul.subNavL1{
+		padding:0;
+		margin:0;
+		position:absolute;
+		top:70px;
+		left:0;
+		list-style:none;
+		background:rgba(0,0,0,0.4);
+		display:none;
+	}
+	/*SHOW*/
+	ul.nav li:hover ul.subNavL1{
+		display:block;
+	}
+	ul.subNavL1 li{
+		margin:0;
+		padding-left:10px; padding-right:10px;
+	}
+	ul.subNavL1 li a{
+		line-height:30px;
+	}
+	
+	/*class="subNavL2"*/
+	ul.subNavL2{
+		padding:0;
+		margin:0;
+		position:absolute;
+		top:0px;
+		left:93px;
+		list-style:none;
+		background:rgba(0,0,0,0.4);
+		display:none;
+	}
+	ul.subNavL1 li:hover ul.subNavL2{
+		display:block;
+	}
+	
+	/*top social*/
+	.topSocialLink{
+		float:right; height:32px; width:32px;
+	}
+	.topSocialLinkfb{
+		background:url(mini-social-icons.png) no-repeat 0px 0px; transition:all 0.15s ease-in;
+	}
+	.topSocialLinkfb:hover{
+		background:url(mini-social-icons.png) no-repeat 0px -33px;
+	}
+	.topSocialLinkgp{
+		background:url(mini-social-icons.png) no-repeat -94px 0px; transition:all 0.15s ease-in;
+	}
+	.topSocialLinkgp:hover{
+		background:url(mini-social-icons.png) no-repeat -94px -33px;
+	}
+	.topSocialLinktw{
+		background:url(mini-social-icons.png) no-repeat -254px 0px; transition:all 0.15s ease-in;
+	}
+	.topSocialLinktw:hover{
+		background:url(mini-social-icons.png) no-repeat -254px -33px;
+	}
+	.topSocialLinktw{
+		background:url(mini-social-icons.png) no-repeat -254px 0px; transition:all 0.15s ease-in;
+	}
+	.topSocialLinktw:hover{
+		background:url(mini-social-icons.png) no-repeat -254px -33px;
+	}
+	.topSocialLinkyt{
+		background:url(mini-social-icons.png) no-repeat -319px 0px; transition:all 0.15s ease-in;
+	}
+	.topSocialLinkyt:hover{
+		background:url(mini-social-icons.png) no-repeat -319px -33px;
+	}
+	#triggerTopSocial:hover div.daud{
+		display:block;
+	}
+	
+    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body style="height:5000px;">
+    <div style="float:left; width:100%; background:rgba(0,0,0,0.4); ">
+        <div style="margin:auto; width:1300px;">
+            <div style="float:left; width:100%; position:relative;">
+            	<div id="topSocial" style="float:left; width:100%; text-align:right; color:#FFF; display:block;">
+                	<div class="topSocialLink" style="background:#FFF; color:#000; line-height:32px; text-align:center; cursor:pointer;" onClick="$(this).parent().slideUp('fast');">
+                        <i class="fa fa-times"></i>&nbsp;
+                    </div>
+                    <div class="topSocialLink topSocialLinktw"></div>
+                    <div class="topSocialLink topSocialLinkyt"></div>
+                    <div class="topSocialLink topSocialLinkfb"></div>
+                    <div class="topSocialLink topSocialLinkgp"></div>
+                </div>
+                <div style="float:left;">
+                    <div style="display:table-cell;  vertical-align:middle;">
+                        <img src="http://localhost:8000/sitelogo/9YTpdO_logo%20(2).png" width="124">
+                    </div>
+                </div>
+                <div style=" position:absolute; right:0; bottom:0;">
+                    <ul class="nav">
+                        <li><dd><a href="#">Home</a><span class="navBorder"></span></dd></li>
+                        <li><dd><a href="#">Industries</a><span class="navBorder"></span></dd>
+                        	<ul class="subNavL1">
+                            	<li><a href="#">Industries</a><span></span></li>
+                                <li><a href="#">Industries</a><span></span>
+                                	<ul class="subNavL2">
+                                    	<li><a href="#">Enterprises</a><span></span></li>
+                                        <li><a href="#">Enterprises</a><span></span></li>
+                                        <li><a href="#">Enterprises</a><span></span></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Industries</a><span></span></li>
+                                <li><a href="#">Industries</a><span></span></li>
+                            </ul>
+                            
+                        </li>
+                        <li><dd><a href="#">Career</a><span class="navBorder"></span></dd></li>
+                        <li><dd><a href="#">Our Company</a><span class="navBorder"></span></dd></li>
+                        <li><dd><a href="#">Products</a><span class="navBorder"></span></dd></li>
+                        <li id="triggerTopSocial">
+                        	<dd><a href="#">Contact us</a><span class="navBorder"></span></dd>
+                            <div class="daud" style="position:absolute; height:32px; width:128px; left:-50px; top:70px; display:none;">
+                            	<div style="float:left;">
+                                	<div class="topSocialLink topSocialLinktw"></div>
+                                    <div class="topSocialLink topSocialLinkyt"></div>
+                                    <div class="topSocialLink topSocialLinkfb"></div>
+                                    <div class="topSocialLink topSocialLinkgp"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script>
+    $(function(){
+		$('ul.nav li a').hover(function(){
+			$(this).addClass('jello animated');
+			//$(this).next().fadeIn();
+		}, function(){
+			$(this).removeClass('jello animated');
+			//$(this).next().fadeOut();
+		});	
+		/*$('#triggerTopSocial').mouseover(function(){
+			$('#topSocial').slideDown('fast');	
+		});*/
+		
+	});
+    </script>
+	</body>
+</html>
